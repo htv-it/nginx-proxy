@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+    nginx-htv:  #<--TODO EDIT
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+
+        container_name: nginx-htv #<--TODO EDIT
+        ports:
+            - '80:80' #<--TODO EDIT
+        restart: always
